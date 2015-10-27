@@ -2,5 +2,151 @@ body{
   margin:0;
   padding: 0;
   background-color: whitesmoke;
-  color: rgb(225,225,225);
+  color: rgb(85,85,85);
+  text-align: center;
+  font-family: arial;
+}
+h3{
+  margin-top: 0;
+}
+
+.title{
+  height: 53vh;
+  background: url("../images/background.png");
+  color:white;
+}
+.me{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+li{
+  font-size: 20px;
+  display: inline-block;
+}
+.tab-row .col{
+  background-color: whitesmoke;
+
+}
+.tabs .tab a{
+  color: rgb(85,85,85);
+}
+
+.tabs .tab a:hover{
+  color: rgb(155,155,155);
+}
+.tabs .indicator{
+  background-color: rgb(120,120,120);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h5{
+  margin: 0;
+}
+p{
+  font-size: 18px;
+}
+.row .col.s12.projects{
+  margin-top: 10px;
+}
+.sample{
+  width:100%;
+}
+.waves-effect{
+  height: 21vh;
+  margin: .3vh;
+  padding: 2px;
+  width: 24%;
+}
+.modal{
+  width:75%;
+  max-height: 80%;
+}
+.modal-content{
+  text-align: justify;
+}
+.modal-content h3{
+  text-align: center;
+}
+.intro-text{
+  display: inline;
+}
+.modal-image{
+  display: inline-block;
+  float: left;
+  width:40%;
+  height: 150px;
+}
+.radicalize{
+  background: url("../images/Radicalize.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.outforawalk{
+  background: url("../images/Outforawalk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.soundtrak{
+  background: url("../images/soundtrak_screenshot.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tictactoe{
+  background: url("../images/TicTacToe_screenshot.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay{
+  opacity: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #555;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  transition: 1s;
+  overflow: hidden;
+  position: relative;
+}
+.overlay:hover{
+  opacity: 0.9;
+}
+.overlay a{
+  display: block;
+  font-size: 18px;
+  color:white;
+  padding-bottom: 10px;
+}
+.overlay a:hover{
+  text-decoration: underline;
+}
+.modal .modal-footer{
+  height: auto;
+  font-size: 18px;
+  text-align: left;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  background-color: whitesmoke;
+  width: 100%;
+  z-index: 1;
+}
+
+.footer img{
+  display: inline-block;
+  height: 48px;
+  padding: 2px;
+  margin-left: 25px;
+}
+
+.row{
+  text-align: center;
 }
