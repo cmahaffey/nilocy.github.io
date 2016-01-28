@@ -1,24 +1,35 @@
 body{
   margin:0;
   padding: 0;
+  padding-top: 5vh;
   background-color: whitesmoke;
   color: rgb(85,85,85);
   text-align: center;
   font-family: arial;
+
 }
 h3{
-  margin-top: 0;
+  margin-top: 5vh;
 }
 
-.title{
-  height: 53vh;
-  background: url("../images/background.png");
-  color:white;
+#title{
+  height: 85vh;
+  background: whitesmoke;
+  color: rgb(85,85,85);
+}
+.smaller{
+  font-size: 10px;
+  position: fixed;
+  top:0;
+  left:0;
+}
+.smaller a{
+  color: rgb(85,85,85);
 }
 .me{
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 60vh;
+  width: 60vh;
 }
 li{
   font-size: 20px;
@@ -26,7 +37,6 @@ li{
 }
 .tab-row .col{
   background-color: whitesmoke;
-
 }
 .tabs .tab a{
   color: rgb(85,85,85);
@@ -36,7 +46,7 @@ li{
   color: rgb(155,155,155);
 }
 .tabs .indicator{
-  background-color: rgb(120,120,120);
+  background-color: whitesmoke;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -44,39 +54,74 @@ li{
 h5{
   margin: 0;
 }
+#About-Me{
+  text-align: justify;
+  font-size: 18px;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  width:80vw
+}
+#Contact{
+  padding-top:25vh;
+}
+#Contact a{
+  padding: 10px;
+}
+
 p{
   font-size: 18px;
 }
-.row .col.s12.projects{
+#Projects{
   margin-top: 10px;
+  margin-bottom: 10px;
+  width: 60vw;
+  margin-left: 12vw;
 }
 .sample{
   width:100%;
+  border-radius: 50%;
+  width: 15vw;
+  height: 120px;
 }
 .waves-effect{
-  height: 21vh;
+  height: 25vh;
   margin: .3vh;
   padding: 2px;
-  width: 24%;
+  width: 25vh;
+  border-radius: 50%;
 }
-.modal{
+.hover{
+  display: none;
+  margin-left: 17vh;
+  margin-bottom: 72px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 2px 0;
   width:75%;
-  max-height: 80%;
+  height: 55vh;
+  overflow: scroll;
 }
-.modal-content{
+.hover-content{
   text-align: justify;
 }
-.modal-content h3{
+.hover-content h3{
+  margin-top: 5px;
   text-align: center;
 }
 .intro-text{
   display: inline;
 }
-.modal-image{
+.hover-image{
   display: inline-block;
   float: left;
   width:40%;
   height: 150px;
+}
+.hover-footer{
+  /*add a top line for seperation*/
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
 }
 .radicalize{
   background: url("../images/Radicalize.png");
@@ -110,7 +155,6 @@ p{
   background-color: #555;
   padding: 40px;
   text-align: center;
-  color: white;
   transition: 1s;
   overflow: hidden;
   position: relative;
@@ -121,13 +165,12 @@ p{
 .overlay a{
   display: block;
   font-size: 18px;
-  color:white;
   padding-bottom: 10px;
 }
 .overlay a:hover{
   text-decoration: underline;
 }
-.modal .modal-footer{
+.hover .hover-footer{
   height: auto;
   font-size: 18px;
   text-align: left;
@@ -149,4 +192,5 @@ p{
 
 .row{
   text-align: center;
+  margin: 0;
 }

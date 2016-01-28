@@ -1,5 +1,40 @@
-console.log('load')
+
 $(document).ready(function(){
     $('ul.tabs').tabs();
     $('.modal-trigger').leanModal();
+    $('ul.tabs').on('click',function(){
+      $('#title').css({'display':'none'})
+    });
+    $('.smaller').on('click',function(){
+      console.log('clicked')
+      $('#title').css({'display':'block'})
+    });
+  $('.radicalize').hover(function(){
+    console.log('Radicalize');
+    $('#OutForAWalk').css({'display':'none'})
+    $('#TicTacToe').css({'display':'none'})
+    $('#SoundTrak').css({'display':'none'})
+    $('#Radicalize').css({'display':'block'})
   });
+  $('.outforawalk').hover(function(){
+    console.log('walk');
+    $('#OutForAWalk').css({'display':'block'})
+    $('#TicTacToe').css({'display':'none'})
+    $('#SoundTrak').css({'display':'none'})
+    $('#Radicalize').css({'display':'none'})
+  });
+  $('.tictactoe').hover(function(){
+    console.log('toe');
+    $('#OutForAWalk').css({'display':'none'})
+    $('#TicTacToe').css({'display':'block'})
+    $('#SoundTrak').css({'display':'none'})
+    $('#Radicalize').css({'display':'none'})
+  });
+  $('.soundtrak').hover(function(){
+    console.log('trak');
+    $('#OutForAWalk').css({'display':'none'})
+    $('#TicTacToe').css({'display':'none'})
+    $('#SoundTrak').css({'display':'block'})
+    $('#Radicalize').css({'display':'none'})
+  });
+});

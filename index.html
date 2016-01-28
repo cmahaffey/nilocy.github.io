@@ -12,40 +12,36 @@
     </script>
   </head>
   <body>
-    <div class="title">
-      <h3>Colin Mahaffey</h3>
-      <img class="me" src="./images/colin-img.jpeg" alt="" />
-      <ul>
-        <li>Web Developer | </li>
-        <li>Javascripter | </li>
-        <li>Rubyist</li>
-      </ul>
-    </div>
     <div class="container">
+      <div class="tab smaller"><a href="#title">Home</a></div>
+      <div id="title">
+        <h3>Colin Mahaffey</h3>
+        <img class="me" src="./images/colin-img.jpeg" alt="" />
+        <ul>
+          <li>Web Developer | </li>
+          <li>Javascripter | </li>
+          <li>Rubyist</li>
+        </ul>
+      </div>
 
 
-      <div class="row tab-row">
-        <div class="col s12">
-          <ul class="tabs">
-            <li class="tab col s4"><a href="#Projects">Projects</a></li>
-            <li class="tab col s4"><a class="active" href="#About-Me">About Me </a></li>
-            <li class="tab col s4"><a href="#Skills">Skills</a></li>
 
-          </ul>
+
+
+        <div id="Projects" class="row">
+          <img class="sample col s3 radicalize" src="./images/Radicalize.png" alt="" />
+          <img class="sample col s3 soundtrak" src="./images/soundtrak_screenshot.png" alt="" />
+          <img class="sample col s3 outforawalk" src="./images/Outforawalk.png" alt="" />
+          <img class="sample col s3 tictactoe" src="./images/TicTacToe_screenshot.png" alt="" />
         </div>
-        <div id="Projects" class="col s12 projects">
-          <a class="waves-effect waves-light btn modal-trigger"href="#Radicalize"><img class="sample" src="./images/Radicalize.png" alt="" /></a>
-          <a class="waves-effect waves-light btn modal-trigger"href="#SoundTrak"><img class="sample" src="./images/soundtrak_screenshot.png" alt="" /></a>
-          <a class="waves-effect waves-light btn modal-trigger"href="#OutForAWalk"><img class="sample" src="./images/Outforawalk.png" alt="" /></a>
-          <a class="waves-effect waves-light btn modal-trigger"href="#TicTacToe"><img class="sample" src="./images/TicTacToe_screenshot.png" alt="" /></a>
-        </div>
-        <div id="Radicalize" class="modal modal-fixed-footer">
-          <div class="modal-content">
+
+        <div id="Radicalize" class="hover">
+          <div class="hover-content">
             <h3>Radicalize</h3>
-            <div class="modal-image radicalize">
+            <div class="hover-image radicalize">
               <div class="overlay">
-                <a class="modal-link" href="https://github.com/nilocy/radicalize">Github</a>
-                <a class="modal-link" href="https://secret-springs-7792.herokuapp.com/">Heroku</a>
+                <a class="hover-link" href="https://github.com/nilocy/radicalize">Github</a>
+                <a class="hover-link" href="https://secret-springs-7792.herokuapp.com/">Heroku</a>
               </div>
             </div>
             <h6 class="intro-text">
@@ -56,117 +52,73 @@
               Born out of the frustration inherent in trying to learn to read Chinese, this project is the actualization of a longtime dream. While currently still limited due to the available data splitting Characters in this way, and lack of good free translation APIs. Radicalize is a first step in vastly simplifying looking up unknown Chinese characters.            </h6>
 
           </div>
-          <div class="modal-footer">
+          <div class="hover-footer">
             Technologies Used:
               MongoDB, Express.js, Node.js, AngularJS
           </div>
         </div>
 
-        <div id="SoundTrak" class="modal modal-fixed-footer">
-          <div class="modal-content">
+        <div id="SoundTrak" class="hover">
+          <div class="hover-content">
             <h3>Soundtrak</h3>
-            <div class="modal-image soundtrak">
+            <div class="hover-image soundtrak">
               <div class="overlay">
-                <a class="modal-link" href="https://github.com/nilocy/ACK_attack">Github</a>
-                <a class="modal-link" href="https://soundtrak.herokuapp.com">Heroku</a>
+                <a class="hover-link" href="https://github.com/nilocy/ACK_attack">Github</a>
+                <a class="hover-link" href="https://soundtrak.herokuapp.com">Heroku</a>
               </div>
             </div>
             <h6 class="intro-text">
               An app made to allow ways to look up the soundtracks of your favorite movies. Consumes both the OMDB and Spotify APIs, as well as a database populated based off an IMDB text file, to allow for finding all the songs to your favorite movies. Searches limited to movies beginning with "al","fro","rush" due to heroku's database limitations
             </h6>
           </div>
-          <div class="modal-footer">
+          <div class="hover-footer">
             Technologies Used:
               Ruby on Rails, BackBone.js
           </div>
         </div>
-        <div id="OutForAWalk" class="modal modal-fixed-footer">
-          <div class="modal-content">
+        <div id="OutForAWalk" class="hover">
+          <div class="hover-content">
             <h3>Out For A Walk</h3>
-            <div class="modal-image outforawalk">
+            <div class="hover-image outforawalk">
               <div class="overlay">
-                <a class="modal-link" href="https://github.com/nilocy/blog">Github</a>
-                <a class="modal-link" href="http://outforawalk.me">Website</a>
+                <a class="hover-link" href="https://github.com/nilocy/blog">Github</a>
+                <a class="hover-link" href="http://outforawalk.me">Website</a>
               </div>
             </div>
             <h6 class="intro-text">
               A picture blog made for my father as he walks the Appalachian trail from DC to Georgia. Designed to be viewed by users, with an inaccessible to the public and easily used back end for updating the pictures.
             </h6>
           </div>
-          <div class="modal-footer">
+          <div class="hover-footer">
             Technologies Used:
               Ruby on Rails, BackBone.js, MaterializeCSS
           </div>
         </div>
 
-      <div id="TicTacToe" class="modal modal-fixed-footer">
-        <div class="modal-content">
+      <div id="TicTacToe" class="hover">
+        <div class="hover-content">
           <h3>TicTacToe</h3>
-          <div class="modal-image tictactoe">
+          <div class="hover-image tictactoe">
             <div class="overlay">
-              <a class="modal-link" href="https://github.com/nilocy/TicTacToe">Github</a>
-              <a class="modal-link" href="/TicTacToe">Website</a>
+              <a class="hover-link" href="https://github.com/nilocy/TicTacToe">Github</a>
+              <a class="hover-link" href="/TicTacToe">Website</a>
             </div>
           </div>
           <h6 class="intro-text">
             My first stab at programming a full page resulted in this TicTacToe program. Made within my first 3 weeks of programming knowledge, this game is a very basic JavaScript and JQuery game, with full computer AI for a 3x3 game. In addition, boards can be rendered and play from all sizes from 3x3 to 8x8.          </h6>
         </div>
-        <div class="modal-footer">
+        <div class="hover-footer">
           Technologies Used:
             JavaScript, Jquery
         </div>
       </div>
 
-          <!-- <div class="row">
-            <div class="col s2 pics">
 
-            </div>
-            <div class="col s4 left-align">
-              <a href="/TicTacToe"><h6>TicTacToe game </h6> </a>
-            </div>
-            <div class="col s2 pics">
-              <img class="sample" src="./images/Radicalize.png" alt="" />
-            </div>
-            <div class="col s4 left-align">
-              <a href="http://soundtrak.herokuapp.com"><h6>Soundtrak </h6> </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s2 pics">
-              <img class="sample" src="./images/Radicalize.png" alt="" />
-            </div>
-            <div class="col s4 left-align">
-              <a href="http://outforawalk.me"><h6>Out for a Walk </h6> </a>
-              <p>
-
-              </p>
-            </div>
-            <div class="col s2 pics">
-              <img class="sample" src="./images/Radicalize.png" alt="" />
-            </div>
-            <div class="col s4 left-align">
-              <a href="http://secret-springs-7792.herokuapp.com"><h6>Radicalize </h6> </a>
-              <p>
-                A way to
-              </p>
-            </div>
-          </div> -->
-
-            <!-- <div class="col s6">
-              <a href="http://soundtrak.herokuapp.com">Soundtrak</a>
-            </div>
-            <div class="col s6">
-              <a href=""></a>
-            </div>
-            <div class="col s6">
-              <a href="http://outforawalk.me"></a>
-            </div> -->
           </div>
         </div>
         <div id="About-Me" class="col s12">
           An avid language learner and world traveler, looking to move from learning human languages to master the languages of computers. A speaker of three languages recently back in the states after a year and a half in China.
-        </div>
-        <div id="Skills" class="col s12">
+          <br><br><br><br>
           <div class="row">
             <div class="col s4">
               <h5 >Languages:</h5>
@@ -194,6 +146,12 @@
             </div>
           </div>
         </div>
+        <div id="Contact" class="col s12">
+          <a href="https://github.com/nilocy"><img src="./images/GitHub-Mark.png" alt="" /></a>
+          <a href="https://www.linkedin.com/in/colinmahaffey"><img src="./images/linkedin.png" alt="" /></a>
+          <a href="mailto:mahaffec@gmail.com"><img src="./images/Mail-Icon-White-on-Black-300px.png" alt="" /></a>
+
+        </div>
 
       </div>
 
@@ -201,10 +159,17 @@
 
 
     <div class="footer center-align">
-      <a href="https://github.com/nilocy"><img src="./images/GitHub-Mark.png" alt="" /></a>
-      <a href="https://www.linkedin.com/in/colinmahaffey"><img src="./images/linkedin.png" alt="" /></a>
-      <a href="mailto:mahaffec@gmail.com"><img src="./images/Mail-Icon-White-on-Black-300px.png" alt="" /></a>
 
+      <div class="row tab-row">
+        <div class="col s12">
+          <ul class="tabs">
+
+            <li class="tab col s4"><a href="#Projects">Projects</a></li>
+            <li class="tab col s4"><a href="#About-Me">About Me </a></li>
+            <li class="tab col s4"><a href="#Contact">Contact</a></li>
+
+          </ul>
+        </div>
     </div>
 
 
