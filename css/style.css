@@ -72,6 +72,7 @@ p{
   font-size: 18px;
 }
 #Projects{
+  display: none;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 60vw;
@@ -100,6 +101,7 @@ p{
   width:75%;
   height: 55vh;
   overflow: scroll;
+  position: relative;
 }
 .hover-content{
   text-align: justify;
@@ -117,12 +119,7 @@ p{
   width:40%;
   height: 150px;
 }
-.hover-footer{
-  /*add a top line for seperation*/
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  position: absolute;
-  bottom: 0;
-}
+
 .radicalize{
   background: url("../images/Radicalize.png");
   background-size: cover;
@@ -171,7 +168,11 @@ p{
   text-decoration: underline;
 }
 .hover .hover-footer{
-  height: auto;
+  clear:both;
+  padding:5px 0;
+  position:absolute;
+  bottom:0;
+  width:100%;
   font-size: 18px;
   text-align: left;
 }
@@ -183,9 +184,9 @@ p{
   z-index: 1;
 }
 
-.footer img{
+a img{
   display: inline-block;
-  height: 48px;
+  height: 128px;
   padding: 2px;
   margin-left: 25px;
 }

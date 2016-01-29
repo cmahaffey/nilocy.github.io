@@ -4,10 +4,21 @@ $(document).ready(function(){
     $('.modal-trigger').leanModal();
     $('ul.tabs').on('click',function(){
       $('#title').css({'display':'none'})
+      $('#OutForAWalk').css({'display':'none'})
+      $('#TicTacToe').css({'display':'none'})
+      $('#SoundTrak').css({'display':'none'})
+      $('#Radicalize').css({'display':'none'})
     });
     $('.smaller').on('click',function(){
       console.log('clicked')
       $('#title').css({'display':'block'})
+      $('#Project').css({'display':'none'})
+      $('#About-Me').css({'display':'none'})
+      $('#Contact').css({'display':'none'})
+      $('#OutForAWalk').css({'display':'none'})
+      $('#TicTacToe').css({'display':'none'})
+      $('#SoundTrak').css({'display':'none'})
+      $('#Radicalize').css({'display':'none'})
     });
   $('.radicalize').hover(function(){
     console.log('Radicalize');
