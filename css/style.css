@@ -6,7 +6,7 @@ body{
   color: rgb(85,85,85);
   text-align: center;
   font-family: arial;
-
+  overflow: scroll;
 }
 h3{
   margin-top: 5vh;
@@ -17,13 +17,13 @@ h3{
   background: whitesmoke;
   color: rgb(85,85,85);
 }
-.smaller{
+.home{
   font-size: 10px;
   position: fixed;
   top:0;
   left:0;
 }
-.smaller a{
+.home a{
   background:#eee;
    text-decoration:none;
    color:#333;
@@ -31,7 +31,6 @@ h3{
    font-size:11px;
    font-weight:bold;
    padding:3px 5px;
-   margin: 25px;
    border:1px solid #aaa;
    border-radius:3px;
 
@@ -67,12 +66,14 @@ h5{
 #About-Me{
   text-align: justify;
   font-size: 18px;
-  margin-top: 10vh;
-  margin-left: 10vw;
-  width:80vw
+  max-width: 60vw;
+  margin: auto;
+  overflow: scroll;
+  margin-bottom: 50px;
 }
 #Contact{
   padding-top:25vh;
+  padding-bottom: 50px;
 }
 #Contact a{
   padding: 10px;
@@ -85,6 +86,7 @@ p{
   display: none;
   margin:auto;
   width: 60vw;
+  padding-bottom: 50px;
 }
 #Radicalize{
   display: none;
@@ -101,24 +103,28 @@ p{
 .sample-projects{
   z-index: 100;
   position: relative;
+  height: 160px
 }
 .project{
-  width:100%;
+
   border-radius: 50%;
-  width: 15vw;
-  height: 120px;
+  /*max-width: 150px;*/
+  height: 150px;
   cursor: pointer;
 }
 
 .hover-wrap{
   position: relative;
+  max-width: 650px;
+  margin: auto;
 }
 .hover{
-  margin:0;
+  margin:auto;
   padding: 25px;
   background-color: white;
   box-shadow: 0 2px 2px 0;
   width:100%;
+  /*max-width:650px;*/
   height: 60vh;
   overflow: scroll;
   position: relative;
@@ -139,8 +145,8 @@ p{
 .hover-image{
   display: inline-block;
   float: left;
-  width:40%;
-  height: 150px;
+  width:200px;
+  height: 125px;
 }
 
 .radicalize{
@@ -192,12 +198,16 @@ p{
 }
 
 .hover-wrap .hover-footer{
+  margin: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   background: white;
   clear:both;
   padding:5px 0;
+  padding-left: 8px;
   position:absolute;
   bottom:0;
   width:100%;
+  /*max-width:700px;*/
   font-size: 18px;
   text-align: left;
 }
@@ -215,27 +225,10 @@ a img{
   padding: 2px;
   margin-left: 25px;
 }
-
+.smaller{
+  height:136px;
+}
 .row{
   text-align: center;
   margin: 0;
 }
-
-/*.hover {
-  padding: 0;
-  height: 70%;
-}
-
-.hover .hover-content {
-  position: absolute;
-  height: calc(100% - 56px);
-  max-height: 100%;
-  width: 100%;
-  overflow-y: auto;
-}
-
-.hover .hover-footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  position: absolute;
-  bottom: 0;
-}*/
