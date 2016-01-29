@@ -9,7 +9,7 @@ $(document).ready(function(){
       $('#SoundTrak').css({'display':'none'})
       $('#Radicalize').css({'display':'none'})
     });
-    $('.smaller').on('click',function(e){
+    $('.home').on('click',function(e){
       e.preventDefault();
       console.log('clicked')
       $('#title').css({'display':'block'})
