@@ -9,10 +9,11 @@ $(document).ready(function(){
       $('#SoundTrak').css({'display':'none'})
       $('#Radicalize').css({'display':'none'})
     });
-    $('.smaller').on('click',function(){
+    $('.smaller').on('click',function(e){
+      e.preventDefault();
       console.log('clicked')
       $('#title').css({'display':'block'})
-      $('#Project').css({'display':'none'})
+      $('#Projects').css({'display':'none'})
       $('#About-Me').css({'display':'none'})
       $('#Contact').css({'display':'none'})
       $('#OutForAWalk').css({'display':'none'})
@@ -20,28 +21,28 @@ $(document).ready(function(){
       $('#SoundTrak').css({'display':'none'})
       $('#Radicalize').css({'display':'none'})
     });
-  $('.radicalize').hover(function(){
+  $('.rad').hover(function(){
     console.log('Radicalize');
     $('#OutForAWalk').css({'display':'none'})
     $('#TicTacToe').css({'display':'none'})
     $('#SoundTrak').css({'display':'none'})
     $('#Radicalize').css({'display':'block'})
   });
-  $('.outforawalk').hover(function(){
+  $('.walk').hover(function(){
     console.log('walk');
     $('#OutForAWalk').css({'display':'block'})
     $('#TicTacToe').css({'display':'none'})
     $('#SoundTrak').css({'display':'none'})
     $('#Radicalize').css({'display':'none'})
   });
-  $('.tictactoe').hover(function(){
+  $('.toe').hover(function(){
     console.log('toe');
     $('#OutForAWalk').css({'display':'none'})
     $('#TicTacToe').css({'display':'block'})
     $('#SoundTrak').css({'display':'none'})
     $('#Radicalize').css({'display':'none'})
   });
-  $('.soundtrak').hover(function(){
+  $('.trak').hover(function(){
     console.log('trak');
     $('#OutForAWalk').css({'display':'none'})
     $('#TicTacToe').css({'display':'none'})

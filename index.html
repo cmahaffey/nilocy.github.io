@@ -29,27 +29,33 @@
 
 
         <div id="Projects" class="row">
-          <img class="sample col s3 radicalize" src="./images/Radicalize.png" alt="" />
-          <img class="sample col s3 soundtrak" src="./images/soundtrak_screenshot.png" alt="" />
-          <img class="sample col s3 outforawalk" src="./images/Outforawalk.png" alt="" />
-          <img class="sample col s3 tictactoe" src="./images/TicTacToe_screenshot.png" alt="" />
-        </div>
+          <div class="sample-projects">
+            <img class="project col s3 rad" src="./images/Radicalize.png" alt="" />
+            <img class="project col s3 trak" src="./images/soundtrak_screenshot.png" alt="" />
+            <img class="project col s3 walk" src="./images/Outforawalk.png" alt="" />
+            <img class="project col s3 toe" src="./images/TicTacToe_screenshot.png" alt="" />
+          </div>
 
-        <div id="Radicalize" class="hover">
-          <div class="hover-content">
-            <h3>Radicalize</h3>
-            <div class="hover-image radicalize">
-              <div class="overlay">
-                <a class="hover-link" href="https://github.com/nilocy/radicalize">Github</a>
-                <a class="hover-link" href="https://secret-springs-7792.herokuapp.com/">Heroku</a>
+
+
+        <div id="Radicalize" class="hover-wrap">
+          <div class="hover">
+            <div class="hover-content">
+              <h3>Radicalize</h3>
+              <div class="hover-image radicalize">
+                <div class="overlay">
+                  <a class="hover-link" href="https://github.com/nilocy/radicalize">Github</a>
+                  <a class="hover-link" href="https://secret-springs-7792.herokuapp.com/">Heroku</a>
+                </div>
               </div>
+              <h6 class="intro-text">
+                Radicalize is a new way to look up Chinese characters.  Using a full MEAN stack, in conjunction with external text documents and RegEx usage, Radicalize allows for a simplistic look-up system based off each character's radicals, the character's smaller component parts.
+                <br>
+                Radicalize uses regular expressions to parse text documents into a Mongo database, and Express.js and AngularJS to allow for an intuitive point and click system for looking up characters within the database.  Express.js and RegEx are also use to scrape an external website for information on a page due to an unfortunate lack of good, free, Chinese dictionary APIs.
+                <br>
+                Born out of the frustration inherent in trying to learn to read Chinese, this project is the actualization of a longtime dream. While currently still limited due to the available data splitting Characters in this way, and lack of good free translation APIs. Radicalize is a first step in vastly simplifying looking up unknown Chinese characters.            </h6>
+
             </div>
-            <h6 class="intro-text">
-              Radicalize is a new way to look up Chinese characters.  Using a full MEAN stack, in conjunction with external text documents and RegEx usage, Radicalize allows for a simplistic look-up system based off each character's radicals, the character's smaller component parts.
-              <br>
-              Radicalize uses regular expressions to parse text documents into a Mongo database, and Express.js and AngularJS to allow for an intuitive point and click system for looking up characters within the database.  Express.js and RegEx are also use to scrape an external website for information on a page due to an unfortunate lack of good, free, Chinese dictionary APIs.
-              <br>
-              Born out of the frustration inherent in trying to learn to read Chinese, this project is the actualization of a longtime dream. While currently still limited due to the available data splitting Characters in this way, and lack of good free translation APIs. Radicalize is a first step in vastly simplifying looking up unknown Chinese characters.            </h6>
 
           </div>
           <div class="hover-footer">
@@ -58,61 +64,70 @@
           </div>
         </div>
 
-        <div id="SoundTrak" class="hover">
-          <div class="hover-content">
-            <h3>Soundtrak</h3>
-            <div class="hover-image soundtrak">
-              <div class="overlay">
-                <a class="hover-link" href="https://github.com/nilocy/ACK_attack">Github</a>
-                <a class="hover-link" href="https://soundtrak.herokuapp.com">Heroku</a>
+        <div id="SoundTrak" class="hover-wrap">
+          <div class="hover">
+            <div class="hover-content">
+              <h3>Soundtrak</h3>
+              <div class="hover-image soundtrak">
+                <div class="overlay">
+                  <a class="hover-link" href="https://github.com/nilocy/ACK_attack">Github</a>
+                  <a class="hover-link" href="https://soundtrak.herokuapp.com">Heroku</a>
+                </div>
               </div>
+              <h6 class="intro-text">
+                An app made to allow ways to look up the soundtracks of your favorite movies. Consumes both the OMDB and Spotify APIs, as well as a database populated based off an IMDB text file, to allow for finding all the songs to your favorite movies. Searches limited to movies beginning with "al","fro","rush" due to heroku's database limitations
+              </h6>
             </div>
-            <h6 class="intro-text">
-              An app made to allow ways to look up the soundtracks of your favorite movies. Consumes both the OMDB and Spotify APIs, as well as a database populated based off an IMDB text file, to allow for finding all the songs to your favorite movies. Searches limited to movies beginning with "al","fro","rush" due to heroku's database limitations
-            </h6>
           </div>
+
           <div class="hover-footer">
             Technologies Used:
               Ruby on Rails, BackBone.js
           </div>
         </div>
-        <div id="OutForAWalk" class="hover">
-          <div class="hover-content">
-            <h3>Out For A Walk</h3>
-            <div class="hover-image outforawalk">
-              <div class="overlay">
-                <a class="hover-link" href="https://github.com/nilocy/blog">Github</a>
-                <a class="hover-link" href="http://outforawalk.me">Website</a>
+        <div id="OutForAWalk" class="hover-wrap">
+          <div class="hover">
+            <div class="hover-content">
+              <h3>Out For A Walk</h3>
+              <div class="hover-image outforawalk">
+                <div class="overlay">
+                  <a class="hover-link" href="https://github.com/nilocy/blog">Github</a>
+                  <a class="hover-link" href="http://outforawalk.me">Website</a>
+                </div>
               </div>
+              <h6 class="intro-text">
+                A picture blog made for my father as he walks the Appalachian trail from DC to Georgia. Designed to be viewed by users, with an inaccessible to the public and easily used back end for updating the pictures.
+              </h6>
             </div>
-            <h6 class="intro-text">
-              A picture blog made for my father as he walks the Appalachian trail from DC to Georgia. Designed to be viewed by users, with an inaccessible to the public and easily used back end for updating the pictures.
-            </h6>
           </div>
+
           <div class="hover-footer">
             Technologies Used:
               Ruby on Rails, BackBone.js, MaterializeCSS
           </div>
         </div>
 
-      <div id="TicTacToe" class="hover">
-        <div class="hover-content">
-          <h3>TicTacToe</h3>
-          <div class="hover-image tictactoe">
-            <div class="overlay">
-              <a class="hover-link" href="https://github.com/nilocy/TicTacToe">Github</a>
-              <a class="hover-link" href="/TicTacToe">Website</a>
+      <div id="TicTacToe" class="hover-wrap">
+        <div class="hover">
+          <div class="hover-content">
+            <h3>TicTacToe</h3>
+            <div class="hover-image tictactoe">
+              <div class="overlay">
+                <a class="hover-link" href="https://github.com/nilocy/TicTacToe">Github</a>
+                <a class="hover-link" href="/TicTacToe">Website</a>
+              </div>
             </div>
+            <h6 class="intro-text">
+              My first stab at programming a full page resulted in this TicTacToe program. Made within my first 3 weeks of programming knowledge, this game is a very basic JavaScript and JQuery game, with full computer AI for a 3x3 game. In addition, boards can be rendered and play from all sizes from 3x3 to 8x8.          </h6>
           </div>
-          <h6 class="intro-text">
-            My first stab at programming a full page resulted in this TicTacToe program. Made within my first 3 weeks of programming knowledge, this game is a very basic JavaScript and JQuery game, with full computer AI for a 3x3 game. In addition, boards can be rendered and play from all sizes from 3x3 to 8x8.          </h6>
         </div>
+
         <div class="hover-footer">
           Technologies Used:
             JavaScript, Jquery
         </div>
       </div>
-
+      </div>
 
           </div>
         </div>
