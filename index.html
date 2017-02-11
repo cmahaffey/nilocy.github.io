@@ -3,192 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>Colin Mahaffey</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css" media="screen" title="no title" charset="utf-8">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css" media="screen" title="no title" charset="utf-8"> -->
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
-    <script type="text/javascript" src=javascripts/scripts.js>
-
-    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script> -->
+    <script src=javascripts/scripts.js></script>
   </head>
   <body>
-    <div class="container">
-      <div class="tab home"><a href="#title">Home</a></div>
-      <div id="title">
-        <h3>Colin Mahaffey</h3>
-        <img class="me" src="./images/colin-img.jpeg" alt="" />
-        <ul>
-          <li>Web Developer | </li>
-          <li>Javascripter | </li>
-          <li>Rubyist</li>
-        </ul>
-      </div>
+    <div class="flip">
+  <div class="card">
+    <div class="face front">
+      <div class="details">
+        <div>
+        <h2>Colin Mahaffey</h2>
+        </div>
+        <hr>
 
-
-
-
-
-        <div id="Projects" class="row">
-          <center>
-            <div class="sample-projects">
-
-              <img class="project col s3 rad" src="./images/Radicalize.png" alt="" />
-              <img class="project col s3 trak" src="./images/soundtrak_screenshot.png" alt="" />
-              <img class="project col s3 walk" src="./images/Outforawalk.png" alt="" />
-              <img class="project col s3 toe" src="./images/TicTacToe_screenshot.png" alt="" />
-
-            </div>
-          </center>
-
-
-        <div id="Radicalize" class="hover-wrap">
-          <div class="hover">
-            <div class="hover-content">
-              <h3>Radicalize</h3>
-              <div class="hover-image radicalize">
-                <div class="overlay">
-                  <a class="hover-link" href="https://github.com/nilocy/radicalize">Github</a>
-                  <a class="hover-link" href="https://secret-springs-7792.herokuapp.com/">Heroku</a>
-                </div>
-              </div>
-              <h6 class="intro-text">
-                Radicalize is a new way to look up Chinese characters.  Using a full MEAN stack, in conjunction with external text documents and RegEx usage, Radicalize allows for a simplistic look-up system based off each character's radicals, the character's smaller component parts.
-                <br>
-                Radicalize uses regular expressions to parse text documents into a Mongo database, and Express.js and AngularJS to allow for an intuitive point and click system for looking up characters within the database.  Express.js and RegEx are also use to scrape an external website for information on a page due to an unfortunate lack of good, free, Chinese dictionary APIs.
-                <br>
-                Born out of the frustration inherent in trying to learn to read Chinese, this project is the actualization of a longtime dream. While currently still limited due to the available data splitting Characters in this way, and lack of good free translation APIs. Radicalize is a first step in vastly simplifying looking up unknown Chinese characters.            </h6>
-
-            </div>
-
-          </div>
-          <div class="hover-footer">
-            Technologies Used:
-              MongoDB, Express.js, Node.js, AngularJS
-          </div>
+        <div class="role">
+          Software Engineer | Web Developer | World Traveler
         </div>
 
-        <div id="SoundTrak" class="hover-wrap">
-          <div class="hover">
-            <div class="hover-content">
-              <h3>Soundtrak</h3>
-              <div class="hover-image soundtrak">
-                <div class="overlay">
-                  <a class="hover-link" href="https://github.com/nilocy/ACK_attack">Github</a>
-                  <a class="hover-link" href="https://soundtrak.herokuapp.com">Heroku</a>
-                </div>
-              </div>
-              <h6 class="intro-text">
-                An app made to allow ways to look up the soundtracks of your favorite movies. Consumes both the OMDB and Spotify APIs, as well as a database populated based off an IMDB text file, to allow for finding all the songs to your favorite movies. Searches limited to movies beginning with "al","fro","rush" due to heroku's database limitations
-              </h6>
-            </div>
-          </div>
-
-          <div class="hover-footer">
-            Technologies Used:
-              Ruby on Rails, BackBone.js
-          </div>
-        </div>
-        <div id="OutForAWalk" class="hover-wrap">
-          <div class="hover">
-            <div class="hover-content">
-              <h3>Out For A Walk</h3>
-              <div class="hover-image outforawalk">
-                <div class="overlay">
-                  <a class="hover-link" href="https://github.com/nilocy/blog">Github</a>
-                  <a class="hover-link" href="http://outforawalk.me">Website</a>
-                </div>
-              </div>
-              <h6 class="intro-text">
-                A picture blog made for my father as he walks the Appalachian trail from DC to Georgia. Designed to be viewed by users, with an inaccessible to the public and easily used back end for updating the pictures.
-              </h6>
-            </div>
-          </div>
-
-          <div class="hover-footer">
-            Technologies Used:
-              Ruby on Rails, BackBone.js, MaterializeCSS
-          </div>
+        <div class="contact">
+          Email: mahaffec@gmail.com
         </div>
 
-      <div id="TicTacToe" class="hover-wrap">
-        <div class="hover">
-          <div class="hover-content">
-            <h3>TicTacToe</h3>
-            <div class="hover-image tictactoe">
-              <div class="overlay">
-                <a class="hover-link" href="https://github.com/nilocy/TicTacToe">Github</a>
-                <a class="hover-link" href="/TicTacToe">Website</a>
-              </div>
-            </div>
-            <h6 class="intro-text">
-              My first stab at programming a full page resulted in this TicTacToe program. Made within my first 3 weeks of programming knowledge, this game is a very basic JavaScript and JQuery game, with full computer AI for a 3x3 game. In addition, boards can be rendered and play from all sizes from 3x3 to 8x8.          </h6>
-          </div>
-        </div>
-
-        <div class="hover-footer">
-          Technologies Used:
-            JavaScript, Jquery
+        <div class="contact">
+          Phone: 202-413-2445
         </div>
       </div>
-      </div>
-
-          </div>
-        </div>
-        <div id="About-Me" class="col s12">
-          An avid language learner and world traveler, looking to move from learning human languages to master the languages of computers. A speaker of three languages recently back in the states after a year and a half in China.
-          <br><br><br><br>
-          <div class="row">
-            <div class="col s4">
-              <h5 >Languages:</h5>
-              <p >
-                JavaScript <br>
-                Ruby <br>
-                HTML/CSS
-              </p>
-            </div>
-            <div class="col s4">
-              <h5 >Frameworks:</h5>
-              <p >
-                Rails <br>
-                Sinatra <br>
-                Node.js <br>
-              </p>
-            </div>
-            <div class="col s4">
-              <h5 >Libraries:</h5>
-              <p >
-                AngularJS <br>
-                Backbone.js <br>
-                JQuery
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="Contact" class="col s12">
-          <a href="https://github.com/nilocy"><img class="smaller"src="./images/GitHub-Mark.png" alt="" /></a>
-          <a href="https://www.linkedin.com/in/colinmahaffey"><img src="./images/linkedin.png" alt="" /></a>
-          <a href="mailto:mahaffec@gmail.com"><img src="./images/Mail-Icon-White-on-Black-300px.png" alt="" /></a>
-
-        </div>
-
-      </div>
-
-      </div>
-
-
-    <div class="footer center-align">
-
-      <div class="row tab-row">
-        <div class="col s12">
-          <ul class="tabs">
-
-            <li class="tab col s4"><a href="#Projects">Projects</a></li>
-            <li class="tab col s4"><a href="#About-Me">About Me </a></li>
-            <li class="tab col s4"><a href="#Contact">Contact</a></li>
-
-          </ul>
-        </div>
     </div>
+    <div class="face back">
+      <div class="social">
+        <table>
+
+          <tr>
+            <td>
+              <img src="./images/Github-Mark.png" class="socialico"/>
+              <div class="sociallink"><a href="http://www.github.com/cmahaffey">Github</a></div>
+            </td>
+            <td>
+              <img src="./images/linkedin.png" class="socialico"/>
+              <div class="sociallink"><a href="http://www.linkedin.com/in/colinmahaffey">Linkedin</a></div>
+            </td>
+          </tr>
+          <tr class = "projects">
+            <td>
+              <img src="./images/soundtrak_screenshot.png" class="socialico"/>
+              <div class="sociallink"><a href="https://soundtrak.herokuapp.com/">SoundTrak</a></div>
+            </td>
+            <td>
+              <img src="./images/Radicalize.png" class="socialico" />
+              <div class="sociallink"><a href="https://secret-springs-7792.herokuapp.com/">Radicalize</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 
 
   </body>

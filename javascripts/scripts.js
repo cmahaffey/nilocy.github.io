@@ -1,52 +1,12 @@
+$(function(){
+  $('.flip').mouseenter(function(){
 
-$(document).ready(function(){
-    $('ul.tabs').tabs();
-    $('.modal-trigger').leanModal();
-    $('ul.tabs').on('click',function(){
-      $('#title').css({'display':'none'})
-      $('#OutForAWalk').css({'display':'none'})
-      $('#TicTacToe').css({'display':'none'})
-      $('#SoundTrak').css({'display':'none'})
-      $('#Radicalize').css({'display':'none'})
-    });
-    $('.home').on('click',function(e){
-      e.preventDefault();
-      console.log('clicked')
-      $('#title').css({'display':'block'})
-      $('#Projects').css({'display':'none'})
-      $('#About-Me').css({'display':'none'})
-      $('#Contact').css({'display':'none'})
-      $('#OutForAWalk').css({'display':'none'})
-      $('#TicTacToe').css({'display':'none'})
-      $('#SoundTrak').css({'display':'none'})
-      $('#Radicalize').css({'display':'none'})
-    });
-  $('.rad').hover(function(){
-    console.log('Radicalize');
-    $('#OutForAWalk').css({'display':'none'})
-    $('#TicTacToe').css({'display':'none'})
-    $('#SoundTrak').css({'display':'none'})
-    $('#Radicalize').css({'display':'block'})
+        if ( $('.flipped').length > 0 )
+          $('.flipped').removeClass('flipped');
+        else
+          $('.card').addClass('flipped')
+
+    return false;
   });
-  $('.walk').hover(function(){
-    console.log('walk');
-    $('#OutForAWalk').css({'display':'block'})
-    $('#TicTacToe').css({'display':'none'})
-    $('#SoundTrak').css({'display':'none'})
-    $('#Radicalize').css({'display':'none'})
-  });
-  $('.toe').hover(function(){
-    console.log('toe');
-    $('#OutForAWalk').css({'display':'none'})
-    $('#TicTacToe').css({'display':'block'})
-    $('#SoundTrak').css({'display':'none'})
-    $('#Radicalize').css({'display':'none'})
-  });
-  $('.trak').hover(function(){
-    console.log('trak');
-    $('#OutForAWalk').css({'display':'none'})
-    $('#TicTacToe').css({'display':'none'})
-    $('#SoundTrak').css({'display':'block'})
-    $('#Radicalize').css({'display':'none'})
-  });
+
 });
