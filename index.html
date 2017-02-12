@@ -46,12 +46,18 @@
               <div class="sociallink"><a href="http://www.linkedin.com/in/colinmahaffey">Linkedin</a></div>
             </td>
           </tr>
+
+          <tr>
+            <th colspan="2">
+              Sample Projects
+            </th>
+          </tr>
           <tr class = "projects">
-            <td>
-              <img src="./images/soundtrak_screenshot.png" class="socialico"/>
+            <td class='soundtrak'>
+              <img src="./images/soundtrak_screenshot.png" class="socialico soundtrak"/>
               <div class="sociallink"><a href="https://soundtrak.herokuapp.com/">SoundTrak</a></div>
             </td>
-            <td>
+            <td class='radicalize'>
               <img src="./images/Radicalize.png" class="socialico" />
               <div class="sociallink"><a href="https://secret-springs-7792.herokuapp.com/">Radicalize</a></div>
             </td>
@@ -60,6 +66,21 @@
       </div>
     </div>
 
+  </div>
+
+  <div>
+    <div class="radicalize description">
+
+      Born out of the frustration of looking up new Characters when I was learning to read Chinese, this project is the actualization of a longtime dream. Rather than relying on pin yin, the phoneticization of the characters, or drawing the character, which relies on knowing the stroke order, Radicalize uses Chinese radicals and a simple point and click system to allow users to look up new characters.
+      <br/><br/>
+      Still in it's infancy, Radicalize uses a full MEAN stack, and is deeply indebted to Jim Breen and the EDRDG's working splitting up Chinese characters. Definitions provided by the Unicode Consortium and their <a href="http://unicode.org/charts/unihan.html">Unihan Database</a>.
+
+    </div>
+    <div class="soundtrak description">
+      Movies use music for a variety of reasons, and the songs in them can bring back special memories for us all. However, movie soundtracks are often limited, and may ignore some of the greatest music. Soundtrak is a solution. Pulling from IMDB's massive song database, Sountrak provides a user all the songs to a movie, and gives them a place to listen to them.
+      <br/><br/>
+      Soundtrak is a Rails app utilizing OMDB, the Open Movie Database, and Spotify APIs together with a database populated via IMDB's extensive list of songs. Soundtrak is currently limited to movies beginning with "al","fro","rush" due to heroku's database limitations.
+    </div>
   </div>
 </div>
 

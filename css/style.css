@@ -97,3 +97,10 @@ body {
  text-decoration:none;
  color:#373837;
 }
+
+.description{
+  display: none;
+  margin: 10px;
+  background-color: #fff;
+  text-align: justify;
+}
