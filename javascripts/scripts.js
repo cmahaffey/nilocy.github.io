@@ -11,7 +11,18 @@ $(function(){
 
     return false;
   });
+  $('.flip').click(function(){
 
+        if ( $('.flipped').length > 0 ){
+          $('.flipped').removeClass('flipped');
+          $('.radicalize.description').css('display','none');
+          $('.soundtrak.description').css('display','none');
+        }else{
+          $('.card').addClass('flipped')
+        }
+
+    return false;
+  });
   $('.radicalize').hover(function(){
     if( $('.soundtrak.description').css('display') == 'block' )
       $('.soundtrak.description').css('display','none');
