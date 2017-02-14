@@ -104,3 +104,7 @@ body {
   background-color: #fff;
   text-align: justify;
 }
+.non-mobile,
+.mobile-link{
+  display: none;
+}
