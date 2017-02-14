@@ -15,6 +15,11 @@ $(function(){
 
   $('.flip').hover(cardFlip);
 
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+   $('.description').click(cardFlip);
+   $('th').click(cardFlip);
+  }
+
   $('.radicalize').hover(function(){
     if( $('.soundtrak.description').css('display') == 'block' );
       $('.soundtrak.description').css('display','none');
