@@ -28,6 +28,7 @@ $(function(){
     //check if back showing
     if( $('.flipped').length > 0 ){
       $('.radicalize.description').css('display','block');
+      $('.descBottom').focus();
       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $('.mobile-link').css('display','inline-block');
         //$('.non-mobile').css('display','none');
@@ -43,6 +44,7 @@ $(function(){
       //check if back showing
     if( $('.flipped').length > 0 ){
       $('.soundtrak.description').css('display','block');
+      $('.descBottom').focus();
       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $('.mobile-link').css('display','inline-block');
         //for when you switch to testing mobile device on computer after viewing, clears the old div
